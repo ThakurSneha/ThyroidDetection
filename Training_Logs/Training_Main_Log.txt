@@ -1,0 +1,5 @@
+2022-02-02/13:28:50		start of validation on files for prediction!!
+2022-02-02/13:28:50		Raw Data Validation Complete!!
+2022-02-02/13:28:50		Bad files moved to archive!! Bad folder Deleted!!
+2022-02-02/13:28:50		Validation Operation Completed!!
+2022-02-02/13:28:50		Extracting csv file from table
