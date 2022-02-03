@@ -5,7 +5,7 @@ import re
 import json
 import shutil
 import pandas as pd
-from application_logging.logger import  App_Logger
+from application_logging.logger import App_Logger
 
 
 

@@ -2,6 +2,7 @@ from flask import Flask, request
 from flask import Response
 import os
 from flask_cors import CORS, cross_origin
+from trainingModel import trainModel
 import flask_monitoringdashboard as dashboard
 
 from training_Validation_Insertion import train_validation
@@ -25,8 +26,8 @@ def trainRouteClient():
             train_valObj.train_validation() #calling the training_validation function
 
 
-            # trainModelObj = trainModel() #object initialization
-            # trainModelObj.trainingModel() #training the model for the filesin the table
+            trainModelObj = trainModel() #object initialization
+            trainModelObj.trainingModel() #training the model for the filesin the table
 
 
     except ValueError:
@@ -41,6 +42,6 @@ def trainRouteClient():
         return Response("Error Occurred! %s" % e)
     return Response("Training Successfull!!")
 
-port = int(os.getenv("PORT"))
+
 if __name__ == "__main__":
     app.run(debug=True)

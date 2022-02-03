@@ -13,7 +13,7 @@ from data_preprocessing import preprocessing
 from data_preprocessing import clustering
 from best_model_finder import tuner
 from file_operations import file_methods
-from application_logging import  logger
+from application_logging import logger
 
 # Creating the common Logging object
 
@@ -85,6 +85,8 @@ class trainModel:
             """ parsing all the clusters and looking for the best ML algorithm to fit on individual cluster """
 
             for i in  list_of_clusters:
+                cluster_data = X[X['Cluster'] == i]  # filter the data for one cluster
+
                 cluster_features = cluster_data.drop(['Labels','Cluster'],axis=1)
                 cluster_label = cluster_data['Labels']
 
@@ -108,4 +110,4 @@ class trainModel:
             # logging the unsuccessful Training
             self.log_writer.log(self.file_object, 'Unsuccessful End of Training')
             self.file_object.close()
-            raise Exception
+            raise Exception()
