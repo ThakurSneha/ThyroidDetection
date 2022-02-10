@@ -231,7 +231,6 @@ class Raw_Data_validation:
                 Revision: None
         """
 
-        # pattern = "['Wafer']+['\_'']+[\d_]+[\d]+\.csv"
         # delete the directories for good and bad data in case last run was unsuccessful and folders were not deleted.
         self.deleteExistingBadDataTrainingFolder()
         self.deleteExistingGoodDataTrainingFolder()

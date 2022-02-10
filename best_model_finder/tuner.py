@@ -1,6 +1,6 @@
 from sklearn.ensemble import  RandomForestClassifier
 from sklearn.model_selection import GridSearchCV
-from sklearn.metrics import roc_auc_score,accuracy_score
+from sklearn.metrics import roc_auc_score, accuracy_score
 from sklearn.neighbors import KNeighborsClassifier
 import pandas as pd
 
@@ -19,7 +19,7 @@ class Model_Finder:
         self.clf = RandomForestClassifier()
         self.Knn = KNeighborsClassifier()
 
-    def get_best_params_for_random_forest(self,train_x,train_y):
+    def get_best_params_for_random_forest(self, train_x, train_y):
         """
             Method Name: get_best_params_for_random_forest
             Description: get the parameters for Random Forest Algorithm which give the best accuracy.
@@ -31,7 +31,7 @@ class Model_Finder:
             Version: 1.0
             Revisions: None
         """
-        self.logger_object.log(self.file_object,'Entered the get_best_params_for_random_forest method of the Model_Finder class')
+        self.logger_object.log(self.file_object, 'Entered the get_best_params_for_random_forest method of the Model_Finder class')
         try:
             # initializing with different combination of parameters
             self.param_grid = {"n_estimators": [10, 50, 100, 130], "criterion": ['gini', 'entropy'],

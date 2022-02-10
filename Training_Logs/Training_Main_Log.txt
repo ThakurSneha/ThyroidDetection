@@ -2,3 +2,11 @@
 2022-02-03/22:51:55		Raw Data Validation Complete!!
 2022-02-03/22:51:55		Bad files moved to archive!! Bad folder Deleted!!
 2022-02-03/22:51:55		Validation Operation Completed!!
+2022-02-07/20:03:21		start of validation on files for prediction!!
+2022-02-07/20:03:22		Raw Data Validation Complete!!
+2022-02-07/20:03:22		Bad files moved to archive!! Bad folder Deleted!!
+2022-02-07/20:03:22		Validation Operation Completed!!
+2022-02-08/12:10:18		start of validation on files for prediction!!
+2022-02-08/12:10:18		Raw Data Validation Complete!!
+2022-02-08/12:10:18		Bad files moved to archive!! Bad folder Deleted!!
+2022-02-08/12:10:18		Validation Operation Completed!!

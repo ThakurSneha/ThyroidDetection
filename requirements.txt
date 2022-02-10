@@ -39,3 +39,4 @@ Werkzeug
 wincertstore
 xgboost
 zipp
+gunicorn

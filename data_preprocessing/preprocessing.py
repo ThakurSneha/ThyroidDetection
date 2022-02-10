@@ -144,8 +144,6 @@ class Preprocessor:
                 data[column] = data[column].map({'f': 0, 't': 1})
 
         # this will map all the rest of the columns as we require. Now there are handful of column left with more than 2 categories.
-        # we will use get_dummies with that.
-        data = pd.get_dummies(data, columns=['referral_source'])
 
         encode = LabelEncoder().fit(data['Class'])
 
@@ -155,37 +153,6 @@ class Preprocessor:
         # back to original
         with open('EncoderPickle/enc.pickle', 'wb') as file:
             pickle.dump(encode, file)
-
-        return data
-
-    def encodeCategoricalValuesPrediction(self, data):
-        """
-            Method Name: encodeCategoricalValuesPrediction
-            Description: This method encodes all the categorical values in the prediction set.
-            Output: A Dataframe which has all the categorical values encoded.
-            On Failure: Raise Exception
-
-            Written By: Sneha Thakur
-            Version: 1.0
-            Revisions: None
-        """
-
-        # We can map the categorical values like below:
-        data['sex'] = data['sex'].map({'F': 0, 'M': 1})
-        cat_data = data.drop(['age', 'T3', 'TT4', 'T4U', 'FTI', 'sex'], axis=1)  # we do not want to encode values with int or float type
-        # except for 'Sex' column all the other columns with two categorical data have same value 'f' and 't'.
-        # so instead of mapping indvidually, let's do a smarter work
-        for column in cat_data.columns:
-            if (data[column].nunique()) == 1:
-                if data[column].unique()[0] == 'f' or data[column].unique()[0] == 'F':  # map the variables same as we did in training i.e. if only 'f' comes map as 0 as done in training
-                    data[column] = data[column].map({data[column].unique()[0]: 0})
-                else:
-                    data[column] = data[column].map({data[column].unique()[0]: 1})
-            elif (data[column].nunique()) == 2:\
-                    data[column] = data[column].map({'f': 0, 't': 1})
-
-        # we will use get dummies for 'referral_source'
-        data = pd.get_dummies(data, columns=['referral_source'])
 
         return data
 

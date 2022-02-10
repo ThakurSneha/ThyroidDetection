@@ -45,7 +45,7 @@ class File_Operation:
             self.logger_object.log(self.file_object, 'Model File ' + filename + ' could not be saved. Exited the save_model method of the Model_Finder class')
             raise  Exception()
 
-    def load_model(selfself , filename):
+    def load_model(self , filename):
         """
             Method Name: load_model
             Description: load the model file to memory

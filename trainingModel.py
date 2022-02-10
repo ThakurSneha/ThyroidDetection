@@ -33,11 +33,10 @@ class trainModel:
             """doing the data preprocessing"""
 
             preprocessor = preprocessing.Preprocessor(self.file_object, self.log_writer)
-            # data=preprocessor.remove_columns(data,['Wafer'])
-            # remove the unnamed column as it doesn't contribute to prediction.
+
 
             # removing unwanted columns as discussed in the EDA part in ipynb file
-            data = preprocessor.dropUnnecessaryColumns(data,['TSH_measured','T3_measured','TT4_measured','T4U_measured','FTI_measured','TBG_measured','TBG','TSH'])
+            data = preprocessor.dropUnnecessaryColumns(data,['TSH_measured','T3_measured','TT4_measured','T4U_measured','FTI_measured','TBG_measured','TBG','TSH','referral_source'])
 
             # repalcing '?' values with np.nan as discussed in the EDA part
 
@@ -47,8 +46,11 @@ class trainModel:
 
             data = preprocessor.encodeCategoricalValues(data)
 
+
             # create separate values for categorical data
             X,Y = preprocessor.separate_label_feature(data, label_column_name='Class')
+
+
 
             # check if missing values are present in the dataset
             is_null_present = preprocessor.is_null_present(X)
@@ -58,15 +60,7 @@ class trainModel:
                 X = preprocessor.impute_missing_values(X) # missing value imputation
 
             X,Y = preprocessor.handleImbalanceDataset(X,Y)
-            # check further which columns do not contribute to predictions
-            # if the standard deviation for a column is zero, it means that the column has constant values
-            # and they are giving the same output both for good and bad sensors
-            # prepare the list of such columns to drop
 
-            # cols_to_drop=preprocessor.get_columns_with_zero_std_deviation(X)
-
-            # drop the columns obtained above
-            # X=preprocessor.remove_columns(X,cols_to_drop)
 
             """ Applying the clustering approach """
 

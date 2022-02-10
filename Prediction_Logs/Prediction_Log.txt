@@ -1,0 +1,40 @@
+2022-02-08/13:42:01		Start of Prediction
+2022-02-08/13:42:01		Entered the load_model method of the File_Operation class
+2022-02-08/13:42:01		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2022-02-08/13:42:01		Kmeans model loaded
+2022-02-08/13:42:01		Label encoder loaded
+2022-02-08/13:42:02		Entered the find_correct_model_file method of the File_Operation class
+2022-02-08/13:42:02		Exited the find_correct_model_file method of the Model_Finder class.
+2022-02-08/13:42:02		Entered the load_model method of the File_Operation class
+2022-02-08/13:42:02		Model File KNN1 loaded. Exited the load_model method of the Model_Finder class
+2022-02-08/13:42:02		Prediction successfully done!!
+2022-02-08/13:45:26		Start of Prediction
+2022-02-08/13:45:26		Entered the load_model method of the File_Operation class
+2022-02-08/13:45:26		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2022-02-08/13:45:26		Kmeans model loaded
+2022-02-08/13:45:26		Label encoder loaded
+2022-02-08/13:45:27		Entered the find_correct_model_file method of the File_Operation class
+2022-02-08/13:45:27		Exited the find_correct_model_file method of the Model_Finder class.
+2022-02-08/13:45:27		Entered the load_model method of the File_Operation class
+2022-02-08/13:45:27		Model File KNN1 loaded. Exited the load_model method of the Model_Finder class
+2022-02-08/13:45:27		Prediction successfully done!!
+2022-02-10/12:20:46		Start of Prediction
+2022-02-10/12:20:46		Entered the load_model method of the File_Operation class
+2022-02-10/12:20:46		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2022-02-10/12:20:46		Kmeans model loaded
+2022-02-10/12:20:46		Label encoder loaded
+2022-02-10/12:20:47		Entered the find_correct_model_file method of the File_Operation class
+2022-02-10/12:20:47		Exited the find_correct_model_file method of the Model_Finder class.
+2022-02-10/12:20:47		Entered the load_model method of the File_Operation class
+2022-02-10/12:20:47		Model File KNN1 loaded. Exited the load_model method of the Model_Finder class
+2022-02-10/12:20:47		Prediction successfully done!!
+2022-02-10/12:35:23		Start of Prediction
+2022-02-10/12:35:23		Entered the load_model method of the File_Operation class
+2022-02-10/12:35:23		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2022-02-10/12:35:23		Kmeans model loaded
+2022-02-10/12:35:23		Label encoder loaded
+2022-02-10/12:35:23		Entered the find_correct_model_file method of the File_Operation class
+2022-02-10/12:35:23		Exited the find_correct_model_file method of the Model_Finder class.
+2022-02-10/12:35:23		Entered the load_model method of the File_Operation class
+2022-02-10/12:35:23		Model File KNN1 loaded. Exited the load_model method of the Model_Finder class
+2022-02-10/12:35:24		Prediction successfully done!!
