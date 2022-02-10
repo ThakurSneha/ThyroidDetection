@@ -10,3 +10,7 @@
 2022-02-08/12:10:18		Raw Data Validation Complete!!
 2022-02-08/12:10:18		Bad files moved to archive!! Bad folder Deleted!!
 2022-02-08/12:10:18		Validation Operation Completed!!
+2022-02-10/18:25:06		start of validation on files for prediction!!
+2022-02-10/18:25:06		Raw Data Validation Complete!!
+2022-02-10/18:25:06		Bad files moved to archive!! Bad folder Deleted!!
+2022-02-10/18:25:06		Validation Operation Completed!!
